@@ -5,14 +5,7 @@ public class IncluirFimRemover implements ListaCircular {
         private Celula fim = null;
     @Override
     public void indiceAtual(Mensagem mensagem) {
-        Celula nova = new Celula(mensagem);
-        if (inicio == null) {
-            inicio = nova;
-            fim = nova;
-        } else {
-            fim.setProxima(nova);
-            fim = nova;
-        }
+
     }
 
     @Override
